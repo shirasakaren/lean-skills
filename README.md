@@ -6,6 +6,8 @@ A source-mapped Lean 4 skill for programming, theorem proving, mathematical form
 
 - `lean4` — writes, explains, debugs, and reviews Lean 4 programs and proofs; covers core Lean, Mathlib, Lake, Elan, and the Lean 4 VS Code extension.
 
+[View `lean4` on skills.sh](https://skills.sh/shirasakaren/lean-skills/lean4).
+
 ## Install
 
 ```bash
@@ -15,7 +17,7 @@ npx skills add shirasakaren/lean-skills
 To select it explicitly from this repository:
 
 ```bash
-npx skills add shirasakaren/lean-skills --skill lean4
+npx skills add shirasakaren/lean-skills@lean4
 ```
 
 ## Knowledge base
