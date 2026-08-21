@@ -43,14 +43,21 @@ If the expected toolchain is unavailable, report the exact missing command or ve
 The references are a snapshot extracted on 2026-08-21. They are large, so search a likely file for a heading, declaration, tactic, or error name and read only the surrounding section. For example:
 
 ```bash
-rg -n '^#{1,6} .*Simplifier|synthInstanceFailed' references/language-reference.md
+rg -n '^#{1,6} .*Simplifier|synthInstanceFailed' references/language-*.md
 ```
 
 Use the project toolchain when its behavior differs from an example in the snapshot.
 
 ### Reference routing
 
-- Read [references/language-reference.md](references/language-reference.md) for elaboration, the type system, definitions, type classes, coercions, runtime behavior, terms, tactics, `simp`, `grind`, `mvcgen`, core types, IO, iterators, macros, custom elaborators, Lake, Elan, validation, and named compiler errors.
+- Read [references/language-core.md](references/language-core.md) for elaboration, interaction modes, the type system, definitions, namespaces, modules, attributes, type classes, coercions, and axioms.
+- Read [references/language-terms-and-tactics.md](references/language-terms-and-tactics.md) for runtime behavior, term syntax, tactic proofs, `simp`, `grind`, and `mvcgen`.
+- Read [references/language-monads-and-propositions.md](references/language-monads-and-propositions.md) for functors, monads, `do` notation, and core logical propositions.
+- Read [references/language-basic-types-numbers.md](references/language-basic-types-numbers.md) for natural numbers, integers, finite numbers, fixed-width integers, bitvectors, and floating-point numbers.
+- Read [references/language-basic-types-text-and-containers.md](references/language-basic-types-text-and-containers.md) for characters, strings, unit, empty, booleans, optional values, tuples, sums, lists, and arrays.
+- Read [references/language-basic-types-collections.md](references/language-basic-types-collections.md) for byte arrays, ranges, maps, sets, subtypes, and lazy computations.
+- Read [references/language-io-and-iterators.md](references/language-io-and-iterators.md) for IO, files, processes, tasks, threads, mutable references, and iterators.
+- Read [references/language-metaprogramming-and-tooling.md](references/language-metaprogramming-and-tooling.md) for notation, macros, syntax extensions, elaborators, custom output, Lake, Elan, validation, release information, and named compiler errors.
 - Read [references/functional-programming.md](references/functional-programming.md) for introductory programming, project creation, structures, datatypes, polymorphism, monads and transformers, dependent programming, termination, performance, and executable examples.
 - Read [references/theorem-proving.md](references/theorem-proving.md) for dependent type theory, propositions, quantifiers, equality, tactic proofs, inductive types, recursion, structures, type classes, `conv`, axioms, and computation.
 - Read [references/mathematics-in-lean.md](references/mathematics-in-lean.md) for Mathlib proofs involving logic, sets, functions, number theory, combinatorics, algebraic structures, groups, rings, linear algebra, topology, calculus, integration, or measure theory.

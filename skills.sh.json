@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Lean 4",
+      "description": "Programming, theorem proving, mathematical formalization, logical verification, and tooling.",
+      "skills": ["lean4"]
+    }
+  ]
+}
